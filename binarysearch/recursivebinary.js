@@ -16,6 +16,7 @@ function binarySearch(array,value,left=0,right=array.length-1)
     else
     {
         return binarySearch(array,value,left,mid-1)
+        console.log('hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii')
     }
     
 }
