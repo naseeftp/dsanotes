@@ -36,22 +36,23 @@ class DoubleyLinkedList
 
   reverse()
   {
-      if(!this.head||this.head==this.tail)
-      {
-          return
-      }
       let current=this.head;
-      let temp=null;
-      while(current)
+      let temp=null
+      while(current!==null)
       {
           temp=current.prev;
           current.prev=current.next;
-          current.next=temp
-          current=current.prev;
+          current.next=temp;
+          current=current.prev
+          
       }
-      temp=this.head;
-      this.head=this.tail;
-      this.tail=temp
+      if(temp!==null)
+      {
+          this.head=temp.prev
+      }
+      
+      
+      
   }
   
   print()
