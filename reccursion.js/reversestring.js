@@ -9,3 +9,9 @@ function reverse(string)
 
 let string="naseef";
 console.log(reverse(string))
+
+function reverseString(string,index=string.length-1){
+    if(index<0) return '';
+    return string[index]+reverseString(string,index-1)
+}
+console.log(reverseString('naseef'));
