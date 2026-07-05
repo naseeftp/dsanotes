@@ -22,3 +22,11 @@ function SecondLarge(array,index=0,large=-Infinity,second=-Infinity)
 
 let array=[1,3,4,5,67,90,17,22]
 console.log(SecondLarge(array))
+
+// nth large
+function nthLarge(array,n){
+    array.sort((a,b)=>a-b);
+    return array[array.length-n]
+}
+
+console.log(nthLarge(array,3))
